@@ -1,0 +1,30 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage*
+
+# Local databases, vector storage, and runtime artifacts
+*.db
+*.sqlite
+qdrant_storage/
+sync-run-*.json
+verification-run-*.json
+*.log
+*.out
+*.err
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store

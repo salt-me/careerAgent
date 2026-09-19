@@ -1,0 +1,36 @@
+{
+  "provider": "open-jobs",
+  "provider_repository": "https://github.com/elliottdehn/open-jobs",
+  "license": "CC0-1.0",
+  "source_url": "https://download.jobscream.com/open-jobs.parquet",
+  "range_source_info": {
+    "url": "https://download.jobscream.com/open-jobs.parquet",
+    "size": 21736141289,
+    "etag": "\"6fd9f273eb696bddb03ae6e472e8e4b2-2592\"",
+    "last_modified": "Thu, 25 Jun 2026 06:13:34 GMT"
+  },
+  "captured_at": "2026-08-02",
+  "scanned_row_groups": 3,
+  "scanned_candidates": 14507,
+  "records_written": 10000,
+  "minimum_companies_per_position": 10,
+  "company_counts_by_position": {
+    "data": 147,
+    "design": 78,
+    "education": 43,
+    "engineering": 262,
+    "finance": 108,
+    "healthcare": 53,
+    "hr": 84,
+    "legal": 44,
+    "marketing": 113,
+    "ops": 168,
+    "product": 118,
+    "research": 50,
+    "sales": 171,
+    "security": 42,
+    "skilled-trade": 27,
+    "support": 83
+  },
+  "coverage_basis": "source structured function and normalized company names"
+}

@@ -1,0 +1,14 @@
+[
+  {"query": "RAG 的召回和 rerank 应如何评测？", "expected_document_id": "kb_rerank"},
+  {"query": "Recall@k 与引用正确率分别说明什么？", "expected_document_id": "kb_evaluation"},
+  {"query": "LangGraph 工作流应该怎么拆节点？", "expected_document_id": "kb_langgraph_workflow"},
+  {"query": "简历中没有写 RAG 能否说明候选人不会？", "expected_document_id": "kb_resume_evidence"},
+  {"query": "怎样给 Python AI 服务写测试和 trace？", "expected_document_id": "kb_python_service"},
+  {"query": "Transformer 的 self-attention 和 PyTorch 训练循环", "expected_document_id": "kb_transformer_pytorch"},
+  {"query": "简历文档接入知识库时有哪些隐私注意事项？", "expected_document_id": "kb_document_processing"},
+  {"query": "为什么需要给模型回答加引用校验？", "expected_document_id": "kb_llm_guardrails"},
+  {"query": "项目 README 和 Docker Compose 如何帮助交付？", "expected_document_id": "kb_docker_delivery"},
+  {"query": "如何用问题方案验证复盘来讲一个项目？", "expected_document_id": "kb_interview_star"},
+  {"query": "岗位匹配 API 应该有哪些接口？", "expected_document_id": "kb_fastapi_api"},
+  {"query": "RAG 链路的文档切分和引用生成", "expected_document_id": "kb_rag_pipeline"}
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "baidu-j100728-2026",
+    "title": "百度｜北京-大模型算法工程师（J100728）",
+    "company": "百度",
+    "position": "大模型算法工程师",
+    "location": "北京",
+    "published_at": "2026-07-21",
+    "captured_at": "2026-08-01",
+    "source": "https://talent.baidu.com/jobs/detail/GRADUATE/ccfdea4e-4ae4-4954-9062-fd94960a2861",
+    "category": "public_jd",
+    "text": "公开岗位摘要：面向大语言模型的训练与应用落地，涉及预训练、后训练、知识问答、RAG、推理与评测。岗位优先关注计算机或人工智能相关背景、Transformer 与 LLM 基础、Python、PyTorch 或 PaddlePaddle 实践，以及大模型训练、NLP 或相关项目经历。"
+  },
+  {
+    "id": "xiaohongshu-17018-2026",
+    "title": "小红书｜2026校招-大模型应用算法工程师",
+    "company": "小红书",
+    "position": "大模型应用算法工程师",
+    "location": "北京/上海",
+    "published_at": "2026-07-28",
+    "captured_at": "2026-08-01",
+    "source": "https://job.xiaohongshu.com/campus/position/17018?referer_code=EJOZXFQLXGQA",
+    "category": "public_jd",
+    "text": "公开岗位摘要：将大语言模型、多模态与强化学习等能力用于社区、商业化和交易等业务，建设智能助理、知识问答和深度研究类 AI 原生应用。岗位要求本科及以上、较强的 Python 或 C++ 编程能力，以及语义理解、RAG、多模态或机器学习项目经验；深度学习框架和科研成果属于加分项。"
+  },
+  {
+    "id": "xiaohongshu-18716-2026",
+    "title": "小红书｜AI应用开发工程师",
+    "company": "小红书",
+    "position": "AI应用开发工程师",
+    "location": "北京/上海",
+    "published_at": "2026-07-28",
+    "captured_at": "2026-08-01",
+    "source": "https://job.xiaohongshu.com/campus/position/18716",
+    "category": "public_jd",
+    "text": "公开岗位摘要：建设 Agent 应用与平台能力，涉及 workflow、tool calling、function calling、MCP、RAG、memory、多轮对话、调试诊断、评估与发布。岗位强调 Go、Java 或 Python 工程能力、代码质量和系统抽象；熟悉 Agent 框架、LLMOps、工作流编排、观测与部署实践者优先。"
+  }
+]

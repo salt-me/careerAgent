@@ -1,0 +1,5 @@
+# Reproducible dependencies for the verified 10k all-job corpus pipeline.
+# fastembed 0.8.0 intentionally uses mean pooling for the selected multilingual model.
+fastembed==0.8.0
+qdrant-client==1.18.0
+pyarrow==23.0.1

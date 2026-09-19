@@ -1,0 +1,3 @@
+计算机科学与技术专业本科生。熟悉 Python、SQL、Git 和 Linux，完成过机器学习、深度学习课程项目。
+个人项目：使用 Python 实现文档知识库问答原型，完成文本清洗、关键词检索和结果引用展示；使用 Docker Compose 配置本地服务。
+正在系统学习 Transformer、PyTorch、LLM、RAG 与 LangGraph，并记录检索评测实验。

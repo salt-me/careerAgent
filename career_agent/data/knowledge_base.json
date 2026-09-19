@@ -1,0 +1,86 @@
+[
+  {
+    "id": "kb_rag_pipeline",
+    "title": "RAG 检索链路设计（演示资料）",
+    "text": "检索增强生成 RAG 的基础链路包括：文档清洗、按语义或标题切分、embedding 或稀疏检索、召回、rerank 和带引用生成。离线评测应分别观察 Recall@k、排序质量和引用是否真正支持结论。",
+    "source": "local://knowledge-base/rag-pipeline",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_langgraph_workflow",
+    "title": "Agent 工作流与状态管理（演示资料）",
+    "text": "LangGraph 类工作流将输入校验、路由、受控工具调用和质量检查建模为显式节点。每个节点应有单一职责，条件边应可从 trace 中复现。复杂业务不应因为营销需要而盲目增加多 Agent。",
+    "source": "local://knowledge-base/agent-workflow",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_evaluation",
+    "title": "LLM 应用离线评测（演示资料）",
+    "text": "评测集应包含正常问答、无依据问题和失败案例，并保存预期证据。Recall@k 衡量正确资料是否被召回；引用正确率衡量引用能否支持回答；端到端评测应记录延迟和 token 成本。",
+    "source": "local://knowledge-base/evaluation",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_resume_evidence",
+    "title": "简历匹配的证据边界（演示资料）",
+    "text": "岗位匹配系统应区分“简历中没有直接证据”和“候选人不具备能力”。任何技能缺口结论都必须可回溯到 JD 与简历原文，避免模型根据空白信息做负面推断。",
+    "source": "local://knowledge-base/evidence-boundary",
+    "category": "safety_guide"
+  },
+  {
+    "id": "kb_python_service",
+    "title": "Python 服务工程化（演示资料）",
+    "text": "Python AI 应用应将配置、业务逻辑和接口层解耦，并为输入校验、路由、检索和引用校验提供单元测试。服务接口需要记录请求 ID、关键节点耗时和失败原因。",
+    "source": "local://knowledge-base/python-service",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_transformer_pytorch",
+    "title": "Transformer 与 PyTorch 面试要点（演示资料）",
+    "text": "Transformer 使用 self-attention 建模 token 间关系。PyTorch 训练通常包括前向计算、损失函数、反向传播和优化器更新；面试应能说明 batch size、学习率和过拟合等调参取舍。",
+    "source": "local://knowledge-base/transformer-pytorch",
+    "category": "interview_guide"
+  },
+  {
+    "id": "kb_document_processing",
+    "title": "文档接入与数据治理（演示资料）",
+    "text": "文档进入知识库前需要去重、格式清洗、来源记录和版本标记。涉及简历和面经时应使用脱敏示例，并避免收集或展示非必要的个人联系方式。",
+    "source": "local://knowledge-base/document-processing",
+    "category": "data_guide"
+  },
+  {
+    "id": "kb_rerank",
+    "title": "重排序实验设计（演示资料）",
+    "text": "可将向量或稀疏召回结果作为 baseline，再使用 rerank 重新排序。实验必须固定语料、问题集和 top-k，报告改动前后 Recall@k、MRR 或 nDCG 的差异以及失败样本。",
+    "source": "local://knowledge-base/rerank",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_fastapi_api",
+    "title": "AI 应用 API 设计（演示资料）",
+    "text": "AI 应用服务通常将文档接入、岗位匹配、面试准备、用户反馈和 trace 查询设计为独立接口。生产化 API 需要校验输入大小、保护密钥并限制高成本请求。",
+    "source": "local://knowledge-base/api-design",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_docker_delivery",
+    "title": "可复现交付（演示资料）",
+    "text": "可复现的 AI 项目应提供 README、环境变量模板、锁定依赖、测试命令和演示数据。Docker Compose 可以在有容器环境时统一启动 API、向量数据库和观测服务。",
+    "source": "local://knowledge-base/delivery",
+    "category": "engineering_guide"
+  },
+  {
+    "id": "kb_interview_star",
+    "title": "项目面试回答框架（演示资料）",
+    "text": "讲项目时使用问题、方案、验证、复盘四段结构。需要说明为什么选择该架构、如何定义指标、失败案例是什么，以及下一轮准备怎样改进，而不是只罗列技术名词。",
+    "source": "local://knowledge-base/interview-star",
+    "category": "interview_guide"
+  },
+  {
+    "id": "kb_llm_guardrails",
+    "title": "大模型回答护栏（演示资料）",
+    "text": "LLM 输出前可以用结构化 schema、来源校验和敏感结论规则做约束。检索不到支持材料时应降低置信度或明确说明不知道，而不是生成貌似合理的细节。",
+    "source": "local://knowledge-base/llm-guardrails",
+    "category": "safety_guide"
+  }
+]

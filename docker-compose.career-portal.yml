@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: careeragent
+      POSTGRES_USER: careeragent
+      POSTGRES_PASSWORD: careeragent
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U careeragent -d careeragent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes: ["career-postgres:/var/lib/postgresql/data"]
+  qdrant:
+    image: qdrant/qdrant:v1.16.2
+    volumes: ["career-qdrant:/qdrant/storage"]
+  career-portal:
+    build:
+      context: .
+      dockerfile: Dockerfile.career-portal
+    ports: ["8000:8000"]
+    env_file: [.env.career-platform]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+volumes:
+  career-postgres:
+  career-qdrant:

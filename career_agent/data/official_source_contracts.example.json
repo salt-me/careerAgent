@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "verified-company-careers",
+      "company": "Verified Company",
+      "feed_url": "https://careers.example.com/public/jobs.json",
+      "items_path": "jobs",
+      "enabled": false,
+      "authoritative": false,
+      "full_enumeration_verified": false,
+      "field_map": {
+        "external_id": "id",
+        "title": "title",
+        "source_url": "apply_url",
+        "description": "description",
+        "location": "location",
+        "status": "status",
+        "published_at": "published_at",
+        "language": "language",
+        "group": "department"
+      }
+    }
+  ]
+}

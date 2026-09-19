@@ -1,0 +1,4 @@
+AI Agent 开发工程师（校招）
+岗位要求：熟悉 Python，掌握 LLM、RAG、向量检索与重排序的基本原理；具备 LangGraph 或 LangChain Agent 开发经验。
+加分项：熟悉 FastAPI、Docker、评测体系、PyTorch 或 Transformer；能够完成文档处理、检索链路优化和可维护的服务化交付。
+岗位职责：参与大模型应用的方案设计、实现、离线评测和迭代复盘。

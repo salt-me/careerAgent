@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "career-agent"
+version = "0.1.0"
+description = "Local-first career search, matching, and lifecycle platform"
+authors = ["CareerAgent contributors"]
+readme = "README.md"
+packages = [{ include = "career_agent" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = "0.141.1"
+uvicorn = { version = "0.52.0", extras = ["standard"] }
+langgraph = "1.2.10"
+pydantic = "2.13.4"
+scikit-learn = "1.9.0"
+fastembed = "0.8.0"
+qdrant-client = "1.18.0"
+pyarrow = "23.0.1"
+sqlalchemy = "2.0.48"
+psycopg = { version = "3.3.3", extras = ["binary"] }
+apscheduler = "3.11.2"
+pycryptodome = "3.23.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "9.1.1"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,45 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: careeragent
+      POSTGRES_USER: careeragent
+      POSTGRES_PASSWORD: careeragent
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U careeragent -d careeragent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes: ["career-postgres:/var/lib/postgresql/data"]
+
+  qdrant:
+    image: qdrant/qdrant:v1.18.0
+    restart: unless-stopped
+    volumes: ["career-qdrant:/qdrant/storage"]
+
+  career-portal:
+    build:
+      context: .
+      dockerfile: Dockerfile.career-portal-final
+    ports: ["8000:8000"]
+    restart: unless-stopped
+    env_file: [.env.career-platform]
+    environment:
+      HF_ENDPOINT: https://hf-mirror.com
+      HF_HUB_DISABLE_XET: '1'
+      FASTEMBED_CACHE_PATH: /root/.cache/fastembed
+    volumes:
+      - career-model-cache:/root/.cache/huggingface
+      - career-fastembed-cache:/root/.cache/fastembed
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+
+volumes:
+  career-postgres:
+  career-qdrant:
+  career-model-cache:
+  career-fastembed-cache:
